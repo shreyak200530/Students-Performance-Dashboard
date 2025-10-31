@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 
 # Use raw string for Windows-style path
-image = Image.open(r"C:\Users\Shreya\OneDrive\Desktop\studentdashboard\streamlit.jpg")
+image = Image.open(r"streamlit.jpg")
 
 st.title("Student Performance Dashboard")
 st.image(image, caption="Dashboard Banner", width=40, use_container_width=True)
@@ -73,3 +73,4 @@ elif avg_marks >= 70:
     st.info("Good performance.")
 else:
     st.warning("Needs improvement.")
+
